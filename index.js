@@ -50,10 +50,10 @@ console.log(userObjectActive, userObjectInactive);
 // №5
 
 const checkedEmail = 'user1@gmail.com';
-const userByEmail = 'Ваш користувач - ' + users.filter(object => object.userEmail === checkedEmail).map(object => object.userName).toString()
+const userByEmail = users.filter(object => object.userEmail === checkedEmail).map(object => object.userName)
 console.log(userByEmail);
 
 // №6
 
-const usersAgeCategory =  users.filter(object => object.age >= 12 && object.age <= 18).map(object => object.userName) + ' - ці юзери підлітки';
+const usersAgeCategory =  users.filter(object => object.age >= 12 && object.age <= 18).map(object => object.userName).toString();
 console.log(usersAgeCategory);
