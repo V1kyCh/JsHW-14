@@ -2,7 +2,7 @@ const users = [
     {
         userName: 'User1',
         userEmail: 'user1@gmail.com',
-        eyeColor: 'Green',
+        eyeColor: 'Dark brown',
         gender: 'female',
         isActive: 'active',
         age: 18
@@ -32,7 +32,7 @@ console.log(userNamesArray);
 
 // №2
 
-const usersEyeColorArray = users.map(userObject => userObject.eyeColor);
+const usersEyeColorArray = users.filter(object => object.eyeColor === 'Dark brown').map(object => object.userName)
 console.log(usersEyeColorArray);
 
 // №3
